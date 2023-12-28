@@ -1,4 +1,6 @@
-const accessKey = kxfH7vfwJOWL9t8J2wsbN861MdxrHas7zlEwkvLFT-c
+// const accessKey = kxfH7vfwJOWL9t8J2wsbN861MdxrHas7zlEwkvLFT-c
+const accessKey = 'kxfH7vfwJOWL9t8J2wsbN861MdxrHas7zlEwkvLFT-c';
+
 const searchForm = document.querySelector('form');
 const searchInput = document.querySelector('.search-input');
 const imagesContainer = document.querySelector('.images-container');
@@ -27,7 +29,7 @@ const data = await response.json(); // jo promise return kia h url ne, use hum j
 
 //console.log(data); https://api.unsplash.com/photos/?client_id=YOUR_ACCESS_KEY  //https://api.unsplash.com/search/photos?query
 
-if(data.results.lenght > 0){
+if(data.results.length > 0){
     data.results.forEach(photo => {
         // creating image div   
        const imageElement = document.createElement('div');
